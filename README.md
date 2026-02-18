@@ -26,9 +26,27 @@ This kind of representation suits to manage labels for the training, getting our
 
 ## Model - MLP
 
-A MLP is the result of the composition of affine transformations (Ax+b) with the posibility of have activaction functions between them. In our case we used a three-layer MLP with ReLU() as activation function bewteen them, such that
+A MLP is the result of the composition of affine transformations (Ax+b) with the posibility of have activaction functions between them. In our case we used a three-layer MLP with ReLU as activation function bewteen them, such that
 
 $$
-MLP(\cdot) = A_3ReLU(A_2ReLU(A_1x +b_1)+b_2) +b_3
+MLP(x) = A_3f(A_2f(A_1x +b_1)+b_2) +b_3,
 $$
+
+where A_i and b_i  are learnable matrices and bias vectors rescpectively, and f is the ReLU funtion.
+
+As next step we passed the vector output through the softmax function to get probabilities to compare with the one-shot target vector.
+
+## Training
+As loss function we used cross entropy (L).
+### Backpropagation
+  For the implemetation of the backpropagation algorithm we used the next rule
+
+$$
+\textbf{A} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{A}\right)
+\textbf{b} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{b}\right)
+$$
+
+where $\nabla L\left(\textbf{A/b}\right)$ is the gradient of L regard to A/b. regarding this is necesary to calculate and implement the derivative of our funtions and use the chain rule to split them in easy steps.
+
+## Results
 
