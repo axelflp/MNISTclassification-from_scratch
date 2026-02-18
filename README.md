@@ -24,6 +24,8 @@ $$
 
 This kind of representation suits to manage labels for the training, getting our code more simple
 
+To finish the preprocesing we split the data in two datasets to train and evaluate our model respectively.
+
 ## Model - MLP
 
 A MLP is the result of the composition of affine transformations (Ax+b) with the posibility of have activaction functions between them. In our case we used a three-layer MLP with ReLU as activation function bewteen them, such that
