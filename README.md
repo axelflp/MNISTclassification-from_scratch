@@ -3,3 +3,4 @@ The purpose of the current work is to implementa a simple MLP (Multilayer Percep
 
 ## Data
 MNIST is a widely-used image dataset of 700 handwritten digits with 784 features (24x24), each image represents a number in the range of 0 to 9 and is labeled with this value. For information, read: [MNIST-data](https://www.openml.org/d/554)
+![MNIST samples](mnist_samples.png)
