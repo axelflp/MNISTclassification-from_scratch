@@ -8,11 +8,11 @@ MNIST is a widely-used image dataset of 700 handwritten digits with 784 features
 
 For more information, read: [MNIST-data](https://www.openml.org/d/554)
 ### Data preprocessing
-For making the data suitable for our model we normalized our images dividing between 255 such that the fatures are values between 0 and 1, addicionally we converted our labels to oneHot vectors.
+For making the data suitable for our model we normalized our images dividing between 255 such that the fatures are values between 0 and 1, addicionally we converted our labels to one-hot vectors.
 
   **Why we normalize?:**  Neural networks are sentive to the range of the values of the input, keeping our data values in the range  [0,1] leads to stability during the training and improves the perfromance of the model.
     
-  **Why use one-shot vectors?**  One-shot veactors is one of the easiest ways to represent feature/labels. If we have n diferent features/labels our one-shot vector *V* will have a lenght of n, in which the position *v_i* corresponds to the i-st feature/label, an the formal equation for this feature/label is as:
+  **Why use one-hot vectors?**  One-hot veactors is one of the easiest ways to represent feature/labels. If we have n diferent features/labels our one-hot vector *V* will have a lenght of n, in which the position *v_i* corresponds to the i-st feature/label, an the formal equation for this feature/label is as:
 
 $$
 (V)_j =
@@ -36,7 +36,7 @@ $$
 
 where A_i and b_i  are learnable matrices and bias vectors rescpectively, and f is the ReLU funtion.
 
-As next step we passed the vector output through the softmax function to get probabilities to compare with the one-shot target vector.
+As next step we passed the vector output through the softmax function to get probabilities to compare with the one-hot target vector.
 
 ## Training
 As loss function we used cross entropy (L).
