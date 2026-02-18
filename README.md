@@ -43,7 +43,7 @@ As loss function we used cross entropy (L).
 
 $$
 \textbf{A} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{A}\right)
-$$
+$$<br>
 
 $$
 \textbf{b} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{b}\right)
