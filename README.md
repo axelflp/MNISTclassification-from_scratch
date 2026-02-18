@@ -53,7 +53,7 @@ $$
 
 where $\nabla L\left(\textbf{A/b}\right)$ is the gradient of L regard to A/b. regarding this is necesary to calculate and implement the derivative of our funtions and use the chain rule to split them in easy steps.
 
-[!During the training we shuffle the data after each epoch]
+*During the training we shuffle the data after each epoch*
 
 ## Results
 
