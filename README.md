@@ -27,6 +27,7 @@ This kind of representation suits to manage labels for the training, getting our
 ## Model - MLP
 
 A MLP is the result of the composition of affine transformations (Ax+b) with the posibility of have activaction functions between them. In our case we used a three-layer MLP with ReLU() as activation function bewteen them, such that
+
 $$
 MLP(\dot) = A_3ReLU(A_2ReLU(A_1x +b_1)+b_2) +b_3
 $$
