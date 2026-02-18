@@ -24,7 +24,7 @@ $$
 
 This kind of representation suits to manage labels for the training, getting our code more simple
 
-To finish the preprocesing we split the data in two datasets to train and evaluate our model respectively.
+To finish the preprocesing we split the data in two datasets to train and evaluate our model respectively, taking the 20% of the original dataset to evaluate.
 
 ## Model - MLP
 
