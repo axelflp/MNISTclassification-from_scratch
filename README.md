@@ -42,7 +42,7 @@ As loss function we used cross entropy (L).
   For the implemetation of the backpropagation algorithm we used the next rule
 
 $$
-\textbf{A} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{A}\right)
+\textbf{A} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{A}\right)\\
 \textbf{b} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{b}\right)
 $$
 
