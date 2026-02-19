@@ -40,8 +40,8 @@ As next step we passed the vector output through the softmax function to get pro
 
 ## Training
 As loss function we used cross entropy (L).
-### Backpropagation
-  For the implemetation of the backpropagation algorithm we used the next rule for gradient descent
+### Gradient Descent  and Backpropagation
+We used the next rule for gradient descent
 
 $$
 \textbf{A} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{A}\right)
@@ -51,9 +51,11 @@ $$
 \textbf{b} \gets \textbf{A}-\epsilon\nabla L\left(\textbf{b}\right)
 $$
 
-where $\nabla L\left(\textbf{A/b}\right)$ is the gradient of L regard to A/b. regarding this is necesary to calculate and implement the derivative of our funtions and use the chain rule to split them in easy steps.
+where $\nabla L\left(\textbf{A/b}\right)$ is the gradient of L regard to A/b. 
 
 *During the training we split our training data in mini-batches and shuffle the data after each epoch, such that we used mini-bach Stochstic Gradient Descent*
+
+We calculated and implemented the derivative of our funtions using the chain rule to split them in easy steps.
 
 ## Results
 
