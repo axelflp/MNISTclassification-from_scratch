@@ -58,4 +58,8 @@ where $\nabla L\left(\textbf{A/b}\right)$ is the gradient of L regard to A/b.
 We calculated and implemented the derivative of our funtions using the chain rule to split them in easy steps.
 
 ## Results
+![Training Loss](images/loss.png)
 
+![Training Accuracy](images/accuracy.png)
+
+![Training Metrics](images/results.png)
